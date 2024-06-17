@@ -71,5 +71,5 @@
 
 html,
 body {
-  @apply h-full w-full overscroll-none;
+  @apply h-full w-full overscroll-none scroll-smooth;
 }

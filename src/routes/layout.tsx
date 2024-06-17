@@ -13,12 +13,13 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 export default component$(() => {
   return (
     <>
-      <div class="flex h-full w-full flex-col items-center">
-        <Navbar />
-        <main class="flex w-full flex-1 flex-col items-center justify-center p-6">
-          <Slot />
-        </main>
-      </div>
+    <div class="flex flex-col min-h-screen">
+      <Navbar />
+      <main class="flex-grow flex w-full flex-col items-center justify-center py-12 px-6">
+        <Slot />
+      </main>
+    
+    </div>
       <Footer />
     </>
   );

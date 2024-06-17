@@ -3,7 +3,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
   return (
-    <div class="flex h-full items-center justify-center text-center">
+    <div class="flex h-full items-center text-center">
       <div class="prose lg:prose-xl">
         <h1>Contact Us</h1>
         <p>

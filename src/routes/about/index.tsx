@@ -1,16 +1,13 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import Lorem from "~/components/lorem/lorem";
 
 export default component$(() => {
   return (
-    <div class="flex h-full items-center justify-center text-center">
+    <div class="flex h-full items-center">
       <div class="prose lg:prose-xl">
-        <h1>About Us</h1>
-        <p>
-          We are a team of dedicated professionals committed to providing
-          excellent service. Our goal is to exceed your expectations in every
-          way.
-        </p>
+        <h1 class="text-center">About Us</h1>
+          <Lorem />
       </div>
     </div>
   );

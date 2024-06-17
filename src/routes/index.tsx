@@ -8,7 +8,7 @@ export default component$(() => {
 
   return (
     <>
-      <div class="flex h-full items-center justify-center text-center">
+      <div class="flex h-full items-center text-center">
         <div class="prose lg:prose-xl">
           <h1>Hello there</h1>
           <p>
