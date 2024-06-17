@@ -1,6 +1,13 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { DiscordButton } from "~/components/buttons/DiscordButton";
+import { YouTubeButton } from "~/components/buttons/YouTubeButton";
+import { TwitchButton } from "~/components/buttons/TwitchButton";
+import { TikTokButton } from "~/components/buttons/TikTokButton";
+import { GitHubButton } from "~/components/buttons/GitHubButton";
+import { SkatebitButton } from "~/components/buttons/SkatebitButton";
 import { StatsButton } from "~/components/buttons/StatsButton";
+import { Footer } from "~/components/footer/footer";
 
 export default component$(() => {
   return (
@@ -8,8 +15,15 @@ export default component$(() => {
       <h1 class="mb-4 text-4xl font-bold">@stillmilky</h1>
       <p class="mb-6 text-center text-lg">Email: milky.irl@gmail.com</p>
       <div class="flex w-full max-w-md flex-col gap-3 px-4">
+        <DiscordButton />
+        <YouTubeButton />
+        <TwitchButton />
+        <TikTokButton />
+        <GitHubButton />
+        <SkatebitButton />
         <StatsButton />
       </div>
+      <Footer />
     </div>
   );
 });
