@@ -69,7 +69,7 @@ export default {
       strokeWidth: {
         0: "0",
         base: "var(--stroke-width)",
-        1: "calc(var(--stroke-width) + -px)",
+        1: "calc(var(--stroke-width) + 1px)",
         2: "calc(var(--stroke-width) + 2px)",
       },
       animation: {
@@ -89,8 +89,8 @@ export default {
     },
   },
   plugins: [
+    require("@tailwindcss/typography"),
     require("tailwindcss-animate"),
-    require('@tailwindcss/typography'),
     plugin(function ({ addUtilities }) {
       addUtilities({
         ".press": {

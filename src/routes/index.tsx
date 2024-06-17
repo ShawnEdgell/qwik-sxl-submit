@@ -17,8 +17,8 @@ export default component$(() => {
             a id nisi.
           </p>
           <Button
-            look="primary"
-            class=" mb-12 mt-6"
+            look="secondary"
+            class="text-accent mb-12 mt-6"
             onClick$={() => (show.value = true)}
           >
             Open Modal
@@ -31,8 +31,8 @@ export default component$(() => {
           <div class="prose lg:prose-xl space-y-6 p-6">
             <h2>Title</h2>
             <p>Description</p>
-            <footer class="flex justify-end space-x-4">
-              <Button look="primary" onClick$={() => (show.value = false)}>
+            <footer class="flex justify-end gap-4">
+              <Button look="secondary" class="text-accent" onClick$={() => (show.value = false)}>
                 Close
               </Button>
             </footer>

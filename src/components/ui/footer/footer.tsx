@@ -4,19 +4,19 @@ import { Link } from "@builder.io/qwik-city";
 export const Footer = component$(() => {
   return (
     <footer class="flex h-64 flex-col items-center justify-center space-y-6 bg-secondary p-4 text-accent ">
-      <nav class="flex gap-6">
+      <nav class="flex space-x-6">
         <Link href="/" class="hover:underline">
           Home
         </Link>
-        <Link href="/about" class="hover:underline">
+        <Link href="/" class="hover:underline">
           About
         </Link>
-        <Link href="/contact" class="hover:underline">
+        <Link href="/" class="hover:underline">
           Contact
         </Link>
       </nav>
       <nav>
-        <div class="flex gap-6">
+        <div class="flex space-x-6">
           <a
             href="https://x.com/?lang=en"
             target="_blank"

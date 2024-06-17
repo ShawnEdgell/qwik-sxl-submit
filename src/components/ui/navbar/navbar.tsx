@@ -3,7 +3,8 @@ import { Link } from "@builder.io/qwik-city";
 
 export const Navbar = component$(() => {
   return (
-    <div class="sticky top-0 flex w-full justify-between bg-secondary p-6">
+    <div class="sticky top-0 flex w-full justify-center bg-secondary p-6">
+      <div class="flex justify-between w-full max-w-3xl">
       <Link href="/" class="text-accent">
         <p class="text-lg font-bold text-accent">Navigation</p>
       </Link>
@@ -18,6 +19,7 @@ export const Navbar = component$(() => {
           Contact
         </Link>
       </nav>
+      </div>
     </div>
   );
 });
