@@ -13,9 +13,9 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 export default component$(() => {
   return (
     <>
-      <div class="flex min-h-screen flex-col items-center">
+      <div class="flex h-full w-full flex-col items-center">
         <Navbar />
-        <main class="mt-[4.5rem] flex w-full flex-1 flex-col items-center justify-center px-4 py-16">
+        <main class="flex w-full flex-1 flex-col items-center justify-center p-6">
           <Slot />
         </main>
       </div>
