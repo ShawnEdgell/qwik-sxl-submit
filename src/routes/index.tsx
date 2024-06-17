@@ -17,7 +17,7 @@ export default component$(() => {
             a id nisi.
           </p>
           <Button
-            look="secondary"
+            look="primary"
             class=" mb-12 mt-6"
             onClick$={() => (show.value = true)}
           >
@@ -32,7 +32,7 @@ export default component$(() => {
             <h2>Title</h2>
             <p>Description</p>
             <footer class="flex justify-end space-x-4">
-              <Button look="secondary" onClick$={() => (show.value = false)}>
+              <Button look="primary" onClick$={() => (show.value = false)}>
                 Close
               </Button>
             </footer>
