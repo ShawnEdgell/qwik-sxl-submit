@@ -32,6 +32,7 @@
     "@builder.io/qwik": "^1.5.7",
     "@builder.io/qwik-auth": "0.2.2",
     "@builder.io/qwik-city": "^1.5.7",
+    "@qwik-ui/headless": "^0.4.4",
     "@types/eslint": "^8.56.10",
     "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^7.7.1",
@@ -39,6 +40,7 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.57.0",
     "eslint-plugin-qwik": "^1.5.7",
+    "nx": "^19.3.0",
     "postcss": "^8.4.31",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.4",
@@ -48,5 +50,9 @@
     "vercel": "^29.1.1",
     "vite": "^5.2.10",
     "vite-tsconfig-paths": "^4.2.1"
+  },
+  "dependencies": {
+    "@qwik-ui/utils": "^0.2.1",
+    "class-variance-authority": "^0.7.0"
   }
 }
