@@ -25,7 +25,8 @@ export const Login = component$(() => {
               signIn.submit({
                 providerId: "github",
                 options: {
-                  callbackUrl: "http://localhost:5173/api/auth/callback/github",
+                  callbackUrl:
+                    "https://qwik-sxl-submit.vercel.app//api/auth/callback/github",
                 },
               })
             }
