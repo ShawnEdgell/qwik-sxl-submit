@@ -18,7 +18,7 @@ export default component$(() => {
           </p>
           <Button
             look="secondary"
-            class="text-accent mb-12 mt-6"
+            class="mb-12 mt-6 text-accent"
             onClick$={() => (show.value = true)}
           >
             Open Modal
@@ -28,11 +28,15 @@ export default component$(() => {
 
       <Modal.Root bind:show={show}>
         <Modal.Panel>
-          <div class="prose lg:prose-xl space-y-6 p-6">
+          <div class="prose space-y-6 p-6 lg:prose-xl">
             <h2>Title</h2>
             <p>Description</p>
             <footer class="flex justify-end gap-4">
-              <Button look="secondary" class="text-accent" onClick$={() => (show.value = false)}>
+              <Button
+                look="secondary"
+                class="text-accent"
+                onClick$={() => (show.value = false)}
+              >
                 Close
               </Button>
             </footer>
